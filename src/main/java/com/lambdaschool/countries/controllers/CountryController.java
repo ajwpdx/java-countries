@@ -109,4 +109,19 @@ public class CountryController
 
         return new ResponseEntity<>(maxPop, HttpStatus.OK);
     }
+
+    // http://localhost:2019/population/median
+    @GetMapping(value = "/population/median", produces = {"application/json"})
+    public ResponseEntity<?> displayMedianPop()
+    {
+        List<Country> myList = new ArrayList<>();
+
+        countryrepos.findAll().iterator().forEachRemaining(myList::add);
+
+        myList.sort((c1, c2) -> Long.compare(c2.getPopulation(), c1.getPopulation()));
+
+        Country maxPop = myList.get(myList.size()/2);
+
+        return new ResponseEntity<>(maxPop, HttpStatus.OK);
+    }
 }
