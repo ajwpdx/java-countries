@@ -1580,13 +1580,13 @@ Status OK
 
 The following URLs should return the requested data given the parameters
 
-* [ ] /names/all - return the names of all the countries alphabetically
-* [ ] /names/start/{letter} - return the countries alphabetically that begin with the given letter
+* [x] /names/all - return the names of all the countries alphabetically
+* [x] /names/start/{letter} - return the countries alphabetically that begin with the given letter
 
-* [ ] /population/total - return the total population of all countries in the console while returning Http Status OK as the response.
-* [ ] /population/min - return the country with the smallest population
-* [ ] /population/max - return the country with the largest population
+* [x] /population/total - return the total population of all countries in the console while returning Http Status OK as the response.
+* [x] /population/min - return the country with the smallest population
+* [x] /population/max - return the country with the largest population
 
 ### Stretch Goal
 
-* [ ] /population/median - return the country with the median population
+* [x] /population/median - return the country with the median population
